@@ -261,7 +261,7 @@ def main_func(dataset_name='Chamelon',eps=[0.5,1,1.5,2,2.5,3,3.5],e1_r=1/3,e2_r=
         print('all_index=%d/%d Done.%.2fs\n'%(ei+1,len(eps),time.time()-ti))
 
     res_path = './result'
-    save_name = res_path + '/' + '%s_%d_%.1f_%.2f_%.2f_%d.csv' %(dataset_name,N,t,e1_r,e2_r,exp_num)
+    save_name = res_path + '/' + '%s_%d_%.1f_%.2f_%.2f_%d.csv'%(dataset_name,N,t,e1_r,e2_r,exp_num)
     if not os.path.exists(res_path):
         os.mkdir(res_path)
     
@@ -307,7 +307,7 @@ if __name__ == '__main__':
     t = 1.0
 
     # run the function
-    main_func(dataset_name=dataset_name,eps=eps,e1_r=e1_r,e2_r=e2_r,N=n1,t=t,exp_num=exp_num)
+    main_func(dataset_name=dataset_name,eps=eps,e1_r=e1_r,e2_r=e2_r,N=n1,t=t,exp_num=exp_num, save_csv=True)
    
 
 
